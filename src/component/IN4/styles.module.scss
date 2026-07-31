@@ -1,0 +1,36 @@
+@import '@styles/mixin.module.scss';
+@import '@styles/variable.module.scss';
+
+.container {
+    // height: 144px;
+
+    background-color: #5f005a;
+    color: #000;
+    margin-top: -75px;
+    padding: 20px 55px;
+    @include flex_box_custom(space-between, center, 0px);
+}
+
+.containerCart {
+    @include flex_box_custom(center, center, 18px);
+    width: 280px;
+    height: 104px;
+}
+
+.containerContent {
+    @include flex_box_custom(center, flex-start, 10px);
+
+    flex-direction: column;
+    color: #fff;
+    font-weight: 300;       
+
+    .title {
+        font-size: 16px;
+       
+    }
+
+    .description {
+        font-size: 16px;
+       
+    }
+}
